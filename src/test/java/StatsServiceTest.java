@@ -32,11 +32,10 @@ public class StatsServiceTest {
         StatsService service = new StatsService();
         int[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
-        int maxSales1 = 6;
-        int maxSales2 = 8;
+        int maxSales = 8;
         int sale = service.maxSales(sales);
 
-        Assertions.assertEquals(maxSales1, maxSales2, sale);
+        Assertions.assertEquals(maxSales, sale);
 
     }
 
